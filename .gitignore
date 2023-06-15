@@ -1,0 +1,5 @@
+FileContentIndex
+.vs
+bin
+obj
+*.user
