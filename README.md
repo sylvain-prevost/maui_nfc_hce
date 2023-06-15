@@ -2,11 +2,11 @@
 
 ## NFC-HCE Maui bootstrap example  
 
-Ultra basic NFC HCE hello world example using .Net MAUI and VisualStudio 2022.
+Ultra basic NFC-HCE helloworld example using .Net MAUI and VisualStudio 2022.
 
 Tested Environment:
 - Win10
-- Visual Studio 2022
+- VisualStudio 2022
 
 No need to install any Android related tools/packages (taken care of by VS2022)
 
@@ -16,9 +16,9 @@ No need to install any Android related tools/packages (taken care of by VS2022)
 - Select appropriate target device
 - Deploy / Run or Debug  
 
-Present phone to HF reader (potentially leveraging PCSC-CL interface)
+Present phone to HF reader (potentially leveraging PCSC Contactless interface)
 
-Example AID: '315041592E5359532E4444463031' (see [here](https://github.com/sylvain-prevost/maui_nfc_hce/blob/main/Platforms/Android/AndroidManifest.xml))
+Example AID: '315041592E5359532E4444463031' (see [here](https://github.com/sylvain-prevost/maui_nfc_hce/blob/main/Platforms/Android/Resources/xml/apduservice.xml))
 
 ```
 => Perform Cold/Warm Reset
@@ -29,7 +29,7 @@ Example AID: '315041592E5359532E4444463031' (see [here](https://github.com/sylva
 
 Notes: 
 - A delay of 500ms has been introduced in the code to simulate workload.
-- Albeit NFC NDEF TAGs APIs are now available, Apple has not opened their NFC HCE API, with no indication they plan to :( , hence it is not available on iOS.
+- Albeit NFC NDEF TAGs APIs are now available, sadly Apple has not opened their NFC HCE API, with no indication they plan to in near future. :(. Hence it is not available on iOS.
 
 Screenshot of application running on Samsung Galaxy S8, Android v9 - API 28.
 
